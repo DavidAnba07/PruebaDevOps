@@ -7,12 +7,14 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.RegisterPage;
 import pages.LoginPage;
+import pages.PremiumPage;
 
 public class CPs {
     //atributos
     private HomePage homePage;
     private RegisterPage registerPage;
     private LoginPage loginPage;
+    private PremiumPage premiumPage;
     private WebDriver driver;
     private String browser = "CHROME"; //Este valor eventualmente se vera modificado
     private String propertyDriver = "webdriver.chrome.driver";
@@ -24,6 +26,8 @@ public class CPs {
         homePage = new HomePage(driver);
         homePage.conexionBrowser(browser,propertyDriver,urlDriver);
         registerPage = new RegisterPage(homePage.getDriver());
+        loginPage = new LoginPage(homePage.getDriver());
+        premiumPage = new PremiumPage(homePage.getDriver());
 
         homePage.cargarPaginas(url);
         homePage.maximizarBrowser();
@@ -47,4 +51,31 @@ public class CPs {
         loginPage.completarFormularioIniciarSesion("david.barcia@tsoftglobal.com","146285234");
         Assert.assertEquals("Nombre de usuario o contraseña incorrectos.",loginPage.obtenerErrorLogin());
     }
+    @Test
+    public void CP004_Iniciar_Fallido_Sesion_Celular_Numero_Corto() {
+        homePage.irAIniciarSesion();
+        loginPage.formularioLoginCelular("+56","9364");
+        Assert.assertEquals("Comprueba el número de teléfono.",loginPage.obtenerErrorNumeroCorto());
+    }
+    @Test
+    public void CP005_Iniciar_Fallido_Sesion_Celular_Por_Letras() {
+        homePage.irAIniciarSesion();
+        loginPage.formularioLoginCelular("+56","asd");
+        Assert.assertEquals("Solo se pueden poner números.",loginPage.obtenerErrorIngresoLetras());
+    }
+    @Test
+    public void CP006_Iniciar_Sesion_Espera_Codigo() {
+        homePage.irAIniciarSesion();
+        loginPage.formularioLoginCelular("+56","950578183");
+        Assert.assertEquals("Introducir tu código",loginPage.obtenerIngresoNumeroCorrecto());
+    }
+
+    @Test
+    public void CP007_Seguimiento_de_premium() {
+        homePage.irAPremium();
+        premiumPage.seguimientoPremium();
+        Assert.assertEquals("Para continuar, inicia sesión en Spotify.",premiumPage.obtenerSolicitudDeCrearCuenta());
+    }
+
+
 }

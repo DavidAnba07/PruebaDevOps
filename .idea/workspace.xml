@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d634c2a-55ce-4c48-bcd4-bbbe2786f94d" name="Changes" comment="Agregando Casos de prueba" />
+    <list default="true" id="7d634c2a-55ce-4c48-bcd4-bbbe2786f94d" name="Changes" comment="Agregando Casos de prueba">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PremiumPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PremiumPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CPs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CPs.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +39,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/David.Barcia/Desktop/Seleriumtest/DemoFrameworkBootCamp/src/test/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/David.Barcia/Desktop/Proyectos/Seleriumtest/DemoFrameworkBootCamp&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
@@ -44,25 +50,7 @@
       <recent name="C:\Users\David.Barcia\Desktop\Seleriumtest\DemoFrameworkBootCamp\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CPs.CP003_Iniciar_Fallido_Usuario_No_Registrado">
-    <configuration name="CPs.CP002_Registro_Fallido_Password_Corta" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="DemoFrameworkBootCamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CPs" />
-      <option name="METHOD_NAME" value="CP002_Registro_Fallido_Password_Corta" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.CPs.CP007_Seguimiento_de_premium">
     <configuration name="CPs.CP003_Iniciar_Fallido_Usuario_No_Registrado" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoFrameworkBootCamp" />
       <extension name="coverage">
@@ -81,10 +69,85 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CPs.CP004_Iniciar_Fallido_Sesion_Celular_Numero_Corto" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoFrameworkBootCamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CPs" />
+      <option name="METHOD_NAME" value="CP004_Iniciar_Fallido_Sesion_Celular_Numero_Corto" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPs.CP005_Iniciar_Fallido_Sesion_Celular_Por_Letras" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoFrameworkBootCamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CPs" />
+      <option name="METHOD_NAME" value="CP005_Iniciar_Fallido_Sesion_Celular_Por_Letras" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPs.CP006_Iniciar_Sesion_Espera_Codigo" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoFrameworkBootCamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CPs" />
+      <option name="METHOD_NAME" value="CP006_Iniciar_Sesion_Espera_Codigo" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPs.CP007_Seguimiento_de_premium" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoFrameworkBootCamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CPs" />
+      <option name="METHOD_NAME" value="CP007_Seguimiento_de_premium" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CPs.CP007_Seguimiento_de_premium" />
+        <item itemvalue="TestNG.CPs.CP006_Iniciar_Sesion_Espera_Codigo" />
+        <item itemvalue="TestNG.CPs.CP005_Iniciar_Fallido_Sesion_Celular_Por_Letras" />
+        <item itemvalue="TestNG.CPs.CP004_Iniciar_Fallido_Sesion_Celular_Numero_Corto" />
         <item itemvalue="TestNG.CPs.CP003_Iniciar_Fallido_Usuario_No_Registrado" />
-        <item itemvalue="TestNG.CPs.CP002_Registro_Fallido_Password_Corta" />
       </list>
     </recent_temporary>
   </component>
@@ -118,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671390015387</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Agregando Casos de prueba">
+      <created>1671390289252</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671390289252</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

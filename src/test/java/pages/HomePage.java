@@ -15,6 +15,7 @@ public class HomePage extends BaseClass {
 
     By locatorBtnRegistrarte = By.xpath("//button[contains(text(),'Registrarte')]");
     By locatorBtnLogin = By.xpath("//button[@data-testid='login-button']");
+    By locatorBtnPremium = By.xpath("//button[contains(text(),'Premium')]");
 
     //Acciones
 
@@ -24,6 +25,10 @@ public class HomePage extends BaseClass {
 
     public void irAIniciarSesion(){
         click(esperarAElementoWeb(locatorBtnLogin));
+    }
+
+    public void irAPremium(){
+        click(esperarAElementoWeb(locatorBtnPremium));
     }
 
 }
